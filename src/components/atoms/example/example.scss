@@ -1,0 +1,7 @@
+@use "../../variables" as *;
+
+.assignment-example-button {
+  color: $color-example;
+  font-size: $fontsize-example;
+  background: url("../../../img/card-2.jpg");
+}
