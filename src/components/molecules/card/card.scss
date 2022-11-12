@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+.card {
+  .card-title {
+    .vector {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      left: 0px;
+      top: 0px;
+      background: $white;
+    }
+    height: 382.41px;
+    background: url("../card/image 1.png");
+  }
+  .card-text {
+    .text-wrap {
+      color: $black;
+    }
+    margin: auto;
+    background: $white_smoke;
+  }
+}
