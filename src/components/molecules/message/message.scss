@@ -1,49 +1,33 @@
 @use "../../variables" as *;
-.messagetext {
-  width: 287px;
-  height: 54px;
-  font-family: "Noto Serif JP";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 54px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: $black;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: auto;
-  margin-bottom: 10px;
 
-  @media screen and(max-width: $breakpoint-lg) {
-    width: 160px;
-    height: 30px;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 6px;
-  }
-}
-.messagedetail {
-  width: 84px;
-  height: 36px;
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 36px;
-  display: flex;
-  align-items: center;
+.text {
   text-align: center;
-  color: $black;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: auto;
-  margin-bottom: 10px;
-  @media screen and(max-width: $breakpoint-lg) {
-    width: 84px;
-    height: 28px;
+
+  .messagetext {
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-xl;
+    line-height: 54px;
+    padding-right: 44px;
+    padding-left: 44px;
+    margin-bottom: 10px;
+
+    @media screen and(max-width: $breakpoint-lg) {
+      padding-right: 107.5px;
+      padding-left: 107.5px;
+      font-size: $fontsize-l;
+      line-height: 30px;
+      margin-bottom: 6px;
+    }
+  }
+
+  .messagedetail {
+    line-height: 36px;
+    padding-right: 145.5px;
+    padding-left: 145.5px;
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-s;
+    @media screen and(max-width: $breakpoint-lg) {
+      line-height: 28px;
+    }
   }
 }
