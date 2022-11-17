@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+
+.button {
+  width: 200px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-size: $fontsize-s;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  background-color: $black;
+  text-decoration: none;
+
+  @media screen and(max-width: $breakpoint-lg) {
+    width: 150px;
+    height: 55px;
+  }
+  @media screen and(max-width: $breakpoint-md) {
+    width: 180px;
+    height: 45px;
+  }
+  &:hover {
+    color: $white;
+    background: $orange_bistre;
+    text-decoration: none;
+  }
+}
