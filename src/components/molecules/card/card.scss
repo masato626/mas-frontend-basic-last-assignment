@@ -3,20 +3,26 @@
   .card-title {
     .vector {
       position: absolute;
-      width: 150px;
-      height: 150px;
-      left: 0px;
-      top: 0px;
-      background: $white;
+      position: absolute;
+      border-top: 50px solid $white;
+      border-left: 50px solid $white;
+      border-bottom: 50px solid transparent;
+      border-right: 50px solid transparent;
+      font-family: $fontfamily-gothic;
+      font-size: $fontsize-l;
+      line-height: 29px;
+      color: $orange_bistre;
+      align-items: center;
     }
-    height: 382.41px;
-    background: url("../card/image 1.png");
+    background: $white;
   }
-  .card-text {
-    .text-wrap {
-      color: $black;
-    }
-    margin: auto;
-    background: $white_smoke;
+  background-size: cover;
+  background: url("../card/image 1.png");
+}
+.card-text {
+  .text-wrap {
+    color: $black;
   }
+  margin: auto;
+  background: $white_smoke;
 }
