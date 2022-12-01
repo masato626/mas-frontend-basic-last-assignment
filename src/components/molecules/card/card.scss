@@ -1,8 +1,8 @@
 @use "../../variables" as *;
 .card {
+  border: 0px;
   .card-title {
     .vector {
-      position: absolute;
       position: absolute;
       border-top: 50px solid $white;
       border-left: 50px solid $white;
@@ -16,13 +16,12 @@
     }
     background: $white;
   }
+  position: relative;
   background-size: cover;
-  background: url("../card/image 1.png");
+  background-image: url("../card/image 1.png");
+  height: 382.41px;
 }
 .card-text {
-  .text-wrap {
-    color: $black;
-  }
-  margin: auto;
+  padding: 32px, 32px, 107px;
   background: $white_smoke;
 }
