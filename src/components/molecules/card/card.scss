@@ -9,9 +9,19 @@
       overflow: hidden;
       width: 100%;
       transition: 0.5s ease;
+      @media screen and (max-width: $breakpoint-md) {
+        transition: none;
+      }
+    }
+    &:hover {
+      .cardimage {
+        transform: scale(1.2);
+        @media screen and (max-width: $breakpoint-md) {
+          transform: none;
+        }
+      }
     }
   }
-
   .cardtitle {
     z-index: 2;
     position: absolute;
