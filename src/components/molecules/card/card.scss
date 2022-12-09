@@ -3,8 +3,9 @@
   border: none;
   position: relative;
   overflow: hidden;
-  .cardimg {
-    .cardimage {
+  margin: 0;
+  .card-img {
+    .card-image {
       z-index: 1;
       overflow: hidden;
       width: 100%;
@@ -14,7 +15,7 @@
       }
     }
     &:hover {
-      .cardimage {
+      .card-image {
         transform: scale(1.2);
         @media screen and (max-width: $breakpoint-md) {
           transform: none;
@@ -22,7 +23,7 @@
       }
     }
   }
-  .cardtitle {
+  .card-title {
     z-index: 2;
     position: absolute;
     font-weight: 700;
@@ -37,12 +38,12 @@
     border-top: 150px solid $white;
     border-right: 150px solid transparent;
   }
-  .cardbody {
+  .card-body {
     padding: 32px;
     z-index: 2;
     background: $white_smoke;
     overflow: hidden;
-    .cardtext {
+    .card-text {
       font-family: $fontfamily-gothic;
       margin-bottom: 30px;
       font-size: $fontsize-s;
