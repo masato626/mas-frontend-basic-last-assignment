@@ -1,20 +1,20 @@
 @use "../../variables" as *;
-.news-lists {
+.news-contents {
   padding-left: 0px;
   list-style: none;
   background-color: $white;
   margin-bottom: 0;
   border: solid $gray_gainsboro 1px;
   border-bottom: 0;
-  .news-lists-link {
-    .news-list {
+  .news-content-link {
+    .news-content {
       padding: 19px 30px 19px 20px;
       border-bottom: solid $gray_gainsboro 1px;
       transition: ease 0.2s;
       .news-date {
         color: $gray_nobel;
         font-size: $fontsize-xs;
-        line-height: 12px;
+        line-height: 1;
         margin-bottom: 10px;
       }
       .news-detail {
@@ -24,13 +24,14 @@
         overflow: hidden;
         text-overflow: ellipsis;
         margin-bottom: 0;
+        white-space: nowrap;
       }
       &:hover .news-detail {
         color: $orange_bistre;
       }
     }
   }
-  &:hover .news-lists-link {
+  &:hover .news-content-link {
     text-decoration: none;
   }
 }
