@@ -4,7 +4,7 @@
   position: relative;
   overflow: hidden;
   margin: 0;
-  .card-img {
+  .card-image-wrap {
     margin: 0;
     .card-image {
       z-index: 1;
@@ -45,7 +45,6 @@
     background: $white_smoke;
     overflow: hidden;
     .card-text {
-      font-family: $fontfamily-gothic;
       margin-bottom: 30px;
       font-size: $fontsize-s;
       line-height: 33px;
