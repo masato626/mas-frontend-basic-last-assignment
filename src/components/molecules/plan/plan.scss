@@ -24,32 +24,34 @@
     border: 1px solid $gray_gainsboro;
     align-items: center;
     border-bottom: 0;
-  }
-  .plan-price {
-    display: flex;
-    .plan-price-yen {
-      margin-top: 24px;
-      font-weight: 700;
-      font-size: $fontsize-xxl;
-      line-height: 58px;
-      color: $orange_bistre;
-      &::before {
-        content: "¥";
-        font-size: $fontsize-l;
-        margin-right: 4px;
+
+    .plan-price {
+      display: flex;
+      .plan-price-yen {
+        margin-top: 24px;
+        font-weight: 700;
+        font-size: $fontsize-xxl;
+        line-height: 58px;
+        color: $orange_bistre;
+        &::before {
+          content: "¥";
+          font-size: $fontsize-l;
+          margin-right: 4px;
+        }
       }
     }
-  }
-  .plan-price-month {
-    font-size: $fontsize-s;
-    margin-bottom: 24px;
+    .plan-price-month {
+      font-size: $fontsize-s;
+      margin-bottom: 24px;
+    }
   }
   .plan-box2 {
-    box-sizing: border-box;
+    text-align: center;
     padding: 20px 10px;
     font-size: $fontsize-s;
-    text-align: center;
+    justify-content: center;
     border: 1px solid $gray_gainsboro;
+    border-bottom: 0;
   }
 }
 .plan:nth-child(2) {
