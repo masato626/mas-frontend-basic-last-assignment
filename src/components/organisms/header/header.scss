@@ -1,0 +1,99 @@
+@use "../../variables" as *;
+
+.header {
+  background-color: $black;
+  font-size: $fontsize-s;
+  line-height: 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  .navbar {
+    margin: 0;
+    padding: 0;
+    .navbar-brand {
+      margin-left: 16px;
+      padding: 0;
+      img {
+        width: 120px;
+        height: 20.56px;
+      }
+    }
+    .navbar-toggler {
+      outline: none;
+      padding: 20.5px 16px;
+    }
+
+    .navbar-collapse .navbar-nav .nav-item {
+      .nav-link {
+        color: $white;
+        padding-left: 16px;
+      }
+      .concept-button {
+        display: flex;
+        justify-content: space-between;
+
+        .navbar-toggler {
+          outline: none;
+        }
+      }
+    }
+    .dropdown-menu {
+      background-color: $black;
+      padding: 0;
+      margin: 0;
+      .dropdown-item {
+        background-color: $black;
+        color: $white;
+        font-size: $fontsize-s;
+        padding: 15px 0px 15px 28px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    background-color: $black_50;
+    height: 90px;
+    .navbar {
+      .navbar-brand {
+        margin-left: 30px;
+        img {
+          width: 140px;
+          height: 23.99px;
+        }
+      }
+      .navbar-collapse {
+        .navbar-nav {
+          padding-right: 10px;
+          .nav-item {
+            .nav-link {
+              margin: 0;
+              padding-right: 40px;
+              padding-top: 35px;
+              padding-bottom: 35px;
+              transition: color 0.3s;
+            }
+            .dropdown-menu {
+              border-radius: 0;
+              .dropdown-item {
+                background-color: $black;
+                transition: all 0.3s ease;
+                padding: 18px;
+                &:hover {
+                  background-color: $orange_bistre;
+                }
+              }
+            }
+            &:hover {
+              .nav-link {
+                color: $gray-nobel;
+              }
+              .dropdown-menu {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
