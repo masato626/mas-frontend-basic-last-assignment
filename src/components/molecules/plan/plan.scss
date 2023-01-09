@@ -3,7 +3,7 @@
   padding: 0;
   list-style-type: none;
   @media screen and (max-width: $breakpoint-md) {
-    margin-bottom: 24px;
+    margin-bottom: 0;
   }
   .plan-title {
     display: flex;
@@ -52,6 +52,7 @@
     justify-content: center;
     border: 1px solid $gray_gainsboro;
     border-bottom: 0;
+    line-height: 20px;
   }
 }
 .plan:nth-child(2) {
