@@ -55,7 +55,7 @@
     line-height: 20px;
   }
 }
-.plan:nth-child(2) {
+.plan:nth-child(2n) {
   outline: 5px solid $orange_bistre;
   outline-offset: -5px;
   li:nth-child(1) {
