@@ -1,0 +1,67 @@
+@use "../../variables" as *;
+.plan {
+  padding: 0;
+  list-style-type: none;
+  @media screen and (max-width: $breakpoint-md) {
+    margin-bottom: 24px;
+  }
+  .plan-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $orange_zorba;
+    font-weight: 700;
+    color: $white;
+    line-height: 29px;
+    font-size: $fontsize-l;
+    padding: 20px 40px;
+  }
+  .plan-box1 {
+    display: flex;
+    justify-content: center;
+    background-color: $gray_desertStorm;
+    flex-direction: column;
+    border: 1px solid $gray_gainsboro;
+    align-items: center;
+    border-bottom: 0;
+
+    .plan-price {
+      display: flex;
+      .plan-price-yen {
+        margin-top: 24px;
+        font-weight: 700;
+        font-size: $fontsize-xxl;
+        line-height: 58px;
+        color: $orange_bistre;
+        &::before {
+          content: "¥";
+          font-size: $fontsize-l;
+          margin-right: 4px;
+        }
+      }
+    }
+    .plan-price-month {
+      font-size: $fontsize-s;
+      margin-bottom: 24px;
+    }
+  }
+  .plan-box2 {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: $fontsize-s;
+    justify-content: center;
+    border: 1px solid $gray_gainsboro;
+    border-bottom: 0;
+    line-height: 20px;
+  }
+}
+.plan:nth-child(2n) {
+  outline: 5px solid $orange_bistre;
+  outline-offset: -5px;
+  li:nth-child(1) {
+    background-color: $orange_bistre;
+  }
+}
+.plan-box2:nth-child(6) {
+  border-bottom: 1px solid $gray_gainsboro;
+}
