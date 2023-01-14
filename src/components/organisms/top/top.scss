@@ -1,0 +1,34 @@
+@use "../../variables" as *;
+
+.top {
+  .top-img {
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../img/top-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+
+    @media screen and (max-width: $breakpoint-lg) {
+      height: 360px;
+    }
+
+    .top-text {
+      color: $white;
+      font-family: $fontfamily-mincho;
+      font-size: $fontsize-xl;
+      line-height: 29px;
+      text-align: center;
+      margin: 0;
+      @media screen and (max-width: $breakpoint-lg) {
+        font-size: $fontsize-l;
+      }
+    }
+  }
+  .message {
+    background-color: $black;
+    color: $white;
+  }
+}
