@@ -20,7 +20,8 @@
       font-family: $fontfamily-mincho;
       font-size: $fontsize-xl;
       line-height: 29px;
-      text-align: center;
+      writing-mode: vertical-rl;
+      vertical-align: middle;
       margin: 0;
       @media screen and (max-width: $breakpoint-lg) {
         font-size: $fontsize-l;
