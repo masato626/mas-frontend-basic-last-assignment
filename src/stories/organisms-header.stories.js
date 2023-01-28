@@ -3,4 +3,4 @@ import "../components/organisms/header/header.scss";
 
 export default { title: "Organisms/Header" };
 
-export const Events = () => Item_Header;
+export const Header = () => Item_Header;
