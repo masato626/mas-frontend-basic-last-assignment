@@ -19,8 +19,11 @@
       }
     }
     .navbar-toggler {
-      outline: none;
       padding: 20.5px 16px;
+      outline: none;
+    }
+    .collapsing {
+      display: block;
     }
 
     .navbar-collapse .navbar-nav .nav-item {
@@ -34,6 +37,7 @@
 
         .navbar-toggler {
           outline: none;
+          padding: 4px 12px;
         }
       }
     }
@@ -62,6 +66,8 @@
         }
       }
       .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
         .navbar-nav {
           padding-right: 10px;
           .nav-item {
@@ -84,6 +90,9 @@
               }
             }
             &:hover {
+              .navbar-toggler {
+                outline: none;
+              }
               .nav-link {
                 color: $gray-nobel;
               }
