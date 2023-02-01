@@ -1,57 +1,60 @@
 @use "../../variables" as *;
-.card {
-  border: none;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  .card-image-wrap {
+.container {
+  gap: 24px;
+  .card {
+    border: none;
+    position: relative;
+    overflow: hidden;
     margin: 0;
-    .card-image {
-      z-index: 1;
-      overflow: hidden;
-      width: 100%;
-      transition: 0.5s ease;
-      @media screen and (max-width: $breakpoint-md) {
-        transition: none;
-      }
-    }
-    &:hover {
+    .card-image-wrap {
+      margin: 0;
       .card-image {
-        transform: scale(1.2);
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        transition: 0.5s ease;
         @media screen and (max-width: $breakpoint-md) {
-          transform: none;
+          transition: none;
+        }
+      }
+      &:hover {
+        .card-image {
+          transform: scale(1.2);
+          @media screen and (max-width: $breakpoint-md) {
+            transform: none;
+          }
         }
       }
     }
-  }
-  .card-title {
-    z-index: 2;
-    position: absolute;
-    font-weight: 700;
-    margin-left: 6px;
-    font-size: $fontsize-l;
-    line-height: 29px;
-    color: $orange_bistre;
-  }
-  .vector {
-    z-index: 1;
-    position: absolute;
-    border-top: 150px solid $white;
-    border-right: 150px solid transparent;
-  }
-  .card-body {
-    padding: 32px;
-    z-index: 2;
-    background: $white_smoke;
-    overflow: hidden;
-    .card-text {
-      margin-bottom: 30px;
-      font-size: $fontsize-s;
-      line-height: 33px;
+    .card-title {
+      z-index: 2;
+      position: absolute;
+      font-weight: 700;
+      margin-left: 6px;
+      font-size: $fontsize-l;
+      line-height: 29px;
+      color: $orange_bistre;
     }
+    .vector {
+      z-index: 1;
+      position: absolute;
+      border-top: 150px solid $white;
+      border-right: 150px solid transparent;
+    }
+    .card-body {
+      padding: 32px;
+      z-index: 2;
+      background: $white_smoke;
+      overflow: hidden;
+      .card-text {
+        margin-bottom: 30px;
+        font-size: $fontsize-s;
+        line-height: 33px;
+      }
 
-    .button {
-      margin: auto;
+      .button {
+        margin: auto;
+      }
     }
   }
 }

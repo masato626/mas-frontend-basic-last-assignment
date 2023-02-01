@@ -1,6 +1,6 @@
-import Item_Card from "../components/organisms/card/card.html";
+import Item_Cards from "../components/organisms/card/card.html";
 import "../components/organisms/card/card.scss";
 
-export default { title: "Organisms/Card" };
+export default { title: "Organisms/Cards" };
 
-export const Card = () => Item_Card;
+export const Cards = () => Item_Cards;
