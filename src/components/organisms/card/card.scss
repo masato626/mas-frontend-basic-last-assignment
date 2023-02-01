@@ -7,11 +7,9 @@
   }
 
   @media screen and (max-width: $breakpoint-md) {
-    .cards {
-      display: block;
-      .card {
-        margin-bottom: 40px;
-      }
+    display: block;
+    .card {
+      margin-bottom: 40px;
     }
   }
 }
