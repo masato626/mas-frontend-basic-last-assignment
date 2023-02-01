@@ -1,25 +1,26 @@
 @use "../../variables" as *;
 .about {
-  margin-top: 40px auto;
-  margin-bottom: 40px auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  @media screen and(max-width:$breakpoint-lg) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
   .img-wrap {
     display: flex;
-    @media screen and(max-width: $breakpoint-md) {
+    margin: 0;
+    @media screen and(max-width: $breakpoint-lg) {
       flex-wrap: wrap;
     }
     .img {
       width: 25%;
-      @media screen and(max-width: $breakpoint-md) {
+      @media screen and(max-width: $breakpoint-lg) {
         width: 50%;
       }
     }
   }
   .message {
-    padding: 52px 20px;
     background-color: $white_smoke;
-    @media screen and(max-width:$breakpoint-md) {
-      padding: 32px 20px;
-    }
     .title {
       color: $orange_bistre;
     }
