@@ -5,6 +5,7 @@
   margin: 0px;
   .information {
     text-align: center;
+    margin-top: 52px;
     margin-bottom: 52px;
     .title {
       display: block;
@@ -40,6 +41,7 @@
     border-top: 1px solid $gray_nobel;
     text-align: center;
     padding: 16px;
+    margin: 0;
     li {
       list-style: none;
       display: inline;
@@ -69,8 +71,9 @@
     }
   }
   @media screen and(max-width: $breakpoint-md) {
-    .information .title-switch {
-      margin: 32px auto 20px;
+    .information {
+      margin-top: 32px;
+      margin-bottom: 32pxs;
     }
     .links {
       display: flex;
