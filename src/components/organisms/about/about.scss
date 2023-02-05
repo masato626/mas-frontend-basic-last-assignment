@@ -1,0 +1,29 @@
+@use "../../variables" as *;
+.about {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  @media screen and(max-width:$breakpoint-lg) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .img-wrap {
+    display: flex;
+    margin: 0;
+    @media screen and(max-width: $breakpoint-lg) {
+      flex-wrap: wrap;
+    }
+    .img {
+      width: 25%;
+      @media screen and(max-width: $breakpoint-lg) {
+        width: 50%;
+      }
+    }
+  }
+  .message {
+    background-color: $white_smoke;
+    .message-text {
+      color: $orange_bistre;
+    }
+  }
+}
