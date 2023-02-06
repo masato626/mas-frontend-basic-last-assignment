@@ -5,8 +5,8 @@
   margin: 0px;
   .information {
     text-align: center;
-    margin-top: 52px;
-    margin-bottom: 52px;
+    padding-top: 52px;
+    padding-bottom: 52px;
     .title {
       display: block;
       margin: 52px auto 20px;
@@ -72,8 +72,8 @@
   }
   @media screen and(max-width: $breakpoint-md) {
     .information {
-      margin-top: 32px;
-      margin-bottom: 32pxs;
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
     .links {
       display: flex;
