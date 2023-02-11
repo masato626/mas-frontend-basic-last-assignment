@@ -1,0 +1,15 @@
+@use "../../variables" as *;
+.cards {
+  display: flex;
+  .card {
+    flex: 1;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    display: block;
+    .card {
+      margin-bottom: 40px;
+    }
+  }
+}
