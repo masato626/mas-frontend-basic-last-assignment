@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 .news-and-events {
   background-color: $white_smoke;
-  padding: 56px 0 56px;
+  padding: 56px 0;
   .container {
     display: flex;
     margin-bottom: 0;
@@ -21,8 +21,8 @@
       }
     }
   }
-  @media screen and(max-width:$breakpoint-lg) {
-    padding: 56px 16px 56px;
+  @media screen and(max-width:$breakpoint-md) {
+    padding: 56px 16px;
     flex-direction: column;
 
     .container {
