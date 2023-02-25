@@ -76,6 +76,9 @@
     .information {
       padding-top: 32px;
       padding-bottom: 32px;
+      .title-switch {
+        margin: 32px auto 20px;
+      }
     }
     .links {
       display: flex;
