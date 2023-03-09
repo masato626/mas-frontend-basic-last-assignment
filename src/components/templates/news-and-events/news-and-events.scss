@@ -14,6 +14,7 @@
       width: 50%;
       padding-left: 20px;
       padding-bottom: 0px;
+      margin-bottom: 0px;
       .event-list {
         .event-card > a {
           height: 143px;
@@ -21,7 +22,7 @@
       }
     }
   }
-  @media screen and(max-width:$breakpoint-md) {
+  @media screen and(max-width:$breakpoint-lg) {
     padding: 56px 16px;
     flex-direction: column;
 
@@ -40,7 +41,7 @@
       .events {
         width: 100%;
         padding-left: 0;
-        .event-list {
+        .event-caption > h3 {
           font-weight: 400;
           .event-card > a {
             height: auto;

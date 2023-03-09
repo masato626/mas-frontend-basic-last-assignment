@@ -1,6 +1,6 @@
-import Item_Newsandevents from "../components/templates/news-and-events/news-and-events.html";
+import Item_NewsAndEvents from "../components/templates/news-and-events/news-and-events.html";
 import "../components/templates/news-and-events/news-and-events.scss";
 
-export default { title: "Templates/News-and-events" };
+export default { title: "Templates/NewsAndEvents" };
 
-export const Events = () => Item_Newsandevents;
+export const NewsAndEvents = () => Item_NewsAndEvents;
