@@ -21,7 +21,92 @@
     <title>サイト制作課題</title>
   </head>
   <body>
-    <h1>このファイルにサイトを作っていくよ。</h1>
+    <header class="header">
+      <nav class="navbar navbar-expand-xl">
+        <a class="navbar-brand" href="#"><img src="../../../img/logo.png" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="../../../img/humberger-bar.svg" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="concept-button">
+                <a class="nav-link" href="#">CONCEPT</a>
+                <button
+                  class="navbar-toggler humberger-bar"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#header-menu-id-dropdown"
+                  aria-controls="#header-menu-id-dropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <img src="../../../img/Property 1=plus.svg" />
+                </button>
+              </div>
+
+              <ul class="dropdown-menu" id="header-menu-id-dropdown">
+                <a class="dropdown-item" href="#">ブログアーカイブ</a>
+                <a class="dropdown-item" href="#">お知らせアーカイブ</a>
+                <a class="dropdown-item" href="#">イベントアーカイブ</a>
+                <a class="dropdown-item" href="#">インタビューアーカイブ</a>
+                <a class="dropdown-item" href="#">FAQぺージ</a>
+                <a class="dropdown-item" href="#">固定ページ</a>
+                <a class="dropdown-item" href="#">CONCEPT</a>
+                <a class="dropdown-item" href="#">SERVICE</a>
+                <a class="dropdown-item" href="#">FLOOR</a>
+                <a class="dropdown-item" href="#">ACCESS</a>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FLOOR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">INTERVIEW</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">DOWNLOAD</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    　　
+    <div class="top">
+      <div class="top-img">
+        <p class="top-text">
+          そうだ。<br />
+          カフェに行こう。
+        </p>
+      </div>
+      <div class="message">
+        <h2 class="message-text">
+          カフェで読書&コワーキング。快適のフロアスペース空間。
+        </h2>
+        <p class="message-detail">
+          カフェテリアでコーヒーを注文し、ブックエリアでお好みの本を選び、コワーキングスペースでコーヒーと共に読書を楽しむ。
+          <br />学校・仕事帰りに、平日の日中に、休日にゆっくり...さまざまなライフスタイルに合わせてご利用いただける多彩なプランをご用意しております。
+        </p>
+      </div>
+    </div>
+    　　
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
