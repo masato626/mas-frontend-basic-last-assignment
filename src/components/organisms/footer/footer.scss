@@ -2,10 +2,9 @@
 .footer {
   text-align: center;
   margin: 0px;
-  padding-top: 36px;
   .information {
     text-align: center;
-    padding-bottom: 52px;
+    padding: 52px 0;
     .title-switch {
       padding: 52px auto 20px;
       display: block;
@@ -78,9 +77,8 @@
 }
 @media screen and(max-width: $breakpoint-md) {
   .footer {
-    padding-top: 16px;
     .information {
-      padding-bottom: 32px;
+      padding: 32px 0;
       .title-switch {
         padding: 32px auto 20px;
       }
