@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - run: mkdir -p ./dest && cp ./src/page/* ./dest/ && cp -r ./src/img ./dest/ && mv ./dest/style.css ./dest/_style.css && sed -e 's/..\/img/.\/img/g' ./dest/_style.css > ./dest/style.css
+    - run: mkdir -p ./dest && cp -r ./src/page/* ./dest/ && cp -r ./src/img ./dest/ && mv ./dest/style.css ./dest/_style.css && sed -e 's/..\/img/.\/img/g' ./dest/_style.css > ./dest/style.css
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
