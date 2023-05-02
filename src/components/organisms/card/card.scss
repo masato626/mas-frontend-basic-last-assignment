@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 .cards {
   display: flex;
+  margin-top: 29px;
   .card {
     flex: 1;
     margin-bottom: 100px;
