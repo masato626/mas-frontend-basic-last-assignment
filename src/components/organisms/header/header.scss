@@ -4,7 +4,6 @@
   background-color: $black;
   font-size: $fontsize-s;
   line-height: 20px;
-  position: absolute;
   width: 100%;
   z-index: 1;
   .navbar {
@@ -56,6 +55,7 @@
   }
 
   @media screen and (min-width: $breakpoint-xl) {
+    position: absolute;
     background-color: $black_50;
     height: 90px;
     .navbar {
